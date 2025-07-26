@@ -70,7 +70,7 @@
       "nombre": "Soberano Continental",
       "descripcion": "Groudon, el creador de la tierra, hace temblar el suelo. ¡Su fuerza es absoluta bajo el sol abrasador!",
       "imagen_banner": "Gacha/Banners/groudon_banner",
-      "fecha_inicio": "2025-07-10", "fecha_fin": "2025-08-30",
+      "fecha_inicio": "2025-07-10", "fecha_fin": "2026-08-30",
       "coste_item": "TICKETFUGAZ", "coste_cantidad": 1,
       "pity_hard_cap_5": 90, "soft_pity_start_5": 75, "pity_hard_cap_4": 10,
       "tasas_base": {"tasa_5_estrellas": 0.6, "tasa_4_estrellas": 5.1, "tasa_3_estrellas": 94.3},
