@@ -1,6 +1,6 @@
 {
-  "version": "2.1.0",
-  "config_version": "2025072007",
+  "version": "2.2.0",
+  "config_version": "2025072009",
 
   "__documentation": {
     "motivo_de_este_archivo": "Este es un archivo de ejemplo avanzado para el Deluxe Gacha System. Muestra cómo configurar banners promocionales complejos, pools de relleno masivos y modificadores de tasa condicionales. Úsalo como base para tus propias creaciones.",
