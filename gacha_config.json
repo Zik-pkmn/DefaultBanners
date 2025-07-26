@@ -103,34 +103,5 @@
     }
   ],
   
-  "banners_objetos": [
-    {
-      "id": "item_maestro_01",
-      "nombre": "Arsenal del Maestro",
-      "descripcion": "¡Consigue los objetos más raros y útiles para tu aventura, incluyendo la legendaria Master Ball y la Cápsula Habilidad!",
-      "imagen_banner": "Gacha/Banners/item_banner",
-      "coste_item": "TICKETDESUMINISTROS",
-      "coste_cantidad": 1,
-      "pity_hard_cap_5": 90,
-      "soft_pity_start_5": 75,
-      "pity_hard_cap_4": 10,
-      "tasas_base": {
-        "tasa_5_estrellas": 0.6,
-        "tasa_4_estrellas": 5.1,
-        "tasa_3_estrellas": 94.3
-      },
-      "recompensas": {
-        "pool_5_estrellas": [
-          { "tipo": "ITEM", "id": "MASTERBALL", "cantidad": 1 },
-          { "tipo": "ITEM", "id": "ABILITYCAPSULE", "cantidad": 1 }
-        ],
-        "pool_4_estrellas": [
-          { "ref_pool": "Pool_Relleno_4_Estrellas" }
-        ],
-        "pool_3_estrellas": [
-          { "ref_pool": "Pool_Relleno_3_Estrellas" }
-        ]
-      }
-    }
-  ]
+  "banners_objetos": []
 }
