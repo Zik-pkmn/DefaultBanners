@@ -88,7 +88,7 @@
       "nombre": "Soberano Celestial",
       "descripcion": "Desde la capa de ozono, Rayquaza desciende. ¡Su poder silencia los cielos y domina los vientos!",
       "imagen_banner": "Gacha/Banners/rayquaza_banner",
-      "fecha_inicio": "2025-06-30", "fecha_fin": "2025-09-20",
+      "fecha_inicio": "2025-06-30", "fecha_fin": "2026-09-20",
       "coste_item": "TICKETFUGAZ", "coste_cantidad": 1,
       "pity_hard_cap_5": 90, "soft_pity_start_5": 75, "pity_hard_cap_4": 10,
       "tasas_base": {"tasa_5_estrellas": 0.6, "tasa_4_estrellas": 5.1, "tasa_3_estrellas": 94.3},
