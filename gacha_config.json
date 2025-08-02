@@ -58,13 +58,14 @@
       "tasas_base": {"tasa_5_estrellas": 0.6, "tasa_4_estrellas": 5.1, "tasa_3_estrellas": 94.3},
       "modificadores_de_tasa": [
         {
-          "condicion": {
-            "tipo": "ITEM_EN_BOLSA",
-            "id": "BLUEORB"
-          },
-          "efecto": {
-            "aumentar_tasa_5": 99.4
-          }
+          "condicion": { "tipo": "ITEM_EN_BOLSA", "id": "BLUEORB" },
+          "efecto": { "aumentar_tasa_5": 99.4 }
+        }
+      ],
+      "modificadores_de_garantia": [
+        {
+          "condicion": { "tipo": "ITEM_EN_BOLSA", "id": "BLUEORB" },
+          "efecto": { "garantizar_destacado_5_estrellas": true }
         }
       ],
       "recompensas": {
@@ -145,5 +146,6 @@
     }
   ]
 }
+
 
 
