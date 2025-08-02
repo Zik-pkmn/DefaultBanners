@@ -56,6 +56,17 @@
       "coste_item": "TICKETFUGAZ", "coste_cantidad": 1,
       "pity_hard_cap_5": 90, "soft_pity_start_5": 75, "pity_hard_cap_4": 10,
       "tasas_base": {"tasa_5_estrellas": 0.6, "tasa_4_estrellas": 5.1, "tasa_3_estrellas": 94.3},
+      "modificadores_de_tasa": [
+        {
+          "condicion": {
+            "tipo": "ITEM_EN_BOLSA",
+            "id": "BLUEORB"
+          },
+          "efecto": {
+            "aumentar_tasa_5": 99.4
+          }
+        }
+      ],
       "recompensas": {
         "pool_5_estrellas_destacado": [{"tipo": "POKEMON", "id": "KYOGRE", "propiedades": {"nivel": 70}}],
         "pool_5_estrellas_general": [{"ref_pool": "pool_5_estrellas_permanente"}],
@@ -134,3 +145,4 @@
     }
   ]
 }
+
