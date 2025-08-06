@@ -210,8 +210,8 @@
       },
       "recompensas": {
         "pool_5_estrellas": [
-          { "tipo": "ITEM", "id": "MASTERBALL", "cantidad": 1 },
-          { "tipo": "ITEM", "id": "ABILITYCAPSULE", "cantidad": 1 }
+          { "tipo": "ITEM", "id": "MASTERBALL", "cantidad": [1, 10] },
+          { "tipo": "ITEM", "id": "ABILITYCAPSULE", "cantidad": [1, 10] }
         ],
         "pool_4_estrellas": [
           { "ref_pool": "Pool_Relleno_4_Estrellas" }
@@ -223,6 +223,7 @@
     }
   ]
 }
+
 
 
 
