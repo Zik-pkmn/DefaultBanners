@@ -1,6 +1,6 @@
 {
   "version": "2.1.1",
-  "config_version": "2025072012",
+  "config_version": "2025072013",
 
   "__documentation": {
     "motivo_de_este_archivo": "Este es un archivo de ejemplo avanzado para el Deluxe Gacha System. Muestra cómo configurar banners promocionales complejos, pools de relleno masivos y modificadores de tasa condicionales. Úsalo como base para tus propias creaciones.",
@@ -52,6 +52,7 @@
       "nombre": "Soberano Oceánico",
       "descripcion": "El legendario Kyogre emerge de las profundidades. ¡Haz que la lluvia eterna juegue a tu favor!",
       "imagen_banner": "Gacha/Banners/kyogre_banner",
+      "imagen_banner_url": "https://github.com/Zik-pkmn/DefaultBanners/blob/main/BANNER_EXAMPLE.png"
       "fecha_inicio": "2025-07-20", "fecha_fin": "2025-08-09",
       "coste_item": "TICKETFUGAZ", "coste_cantidad": 1,
       "pity_hard_cap_5": 90, "soft_pity_start_5": 75, "pity_hard_cap_4": 10,
@@ -146,6 +147,7 @@
     }
   ]
 }
+
 
 
 
