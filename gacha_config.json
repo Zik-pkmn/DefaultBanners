@@ -163,7 +163,7 @@
                 "nivel_obtencion": 24,
                 "obtenido_de_huevo": true,
                 "mapa_huevo_id": 50,
-                "mapa_huevo_texto": "Ciudad Celeste (Sinnoh)",
+                "mapa_huevo_texto": "Pueblo Caelestis (Sinnoh)",
                 "fecha_obtencion": "FECHA_ACTUAL",
                 "fecha_huevo": "2024-01-15",
                 "idioma": 7
@@ -223,6 +223,7 @@
     }
   ]
 }
+
 
 
 
