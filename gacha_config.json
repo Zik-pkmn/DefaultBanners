@@ -118,9 +118,9 @@
       "id": "promo_cynthia_garchomp_2025_08",
       "nombre": "Legado de la Campeona",
       "descripcion": "Siente el poder de la campeona de Sinnoh, Cynthia. Su Garchomp, criado con esmero, ¡ahora puede unirse a tu equipo!",
-      "imagen_banner": "Gacha/Banners/cynthia_banner",
+      "imagen_banner": "Gacha/Banners/groudon_banner",
       "imagen_banner_url": "https://raw.githubusercontent.com/Zik-pkmn/Gacha-assets/main/cynthia_banner_hd.png",
-      "fecha_inicio": "2025-08-10",
+      "fecha_inicio": "2025-08-05",
       "fecha_fin": "2025-08-31",
       "coste_item": "TICKETFUGAZ",
       "coste_cantidad": 1,
@@ -223,6 +223,7 @@
     }
   ]
 }
+
 
 
 
