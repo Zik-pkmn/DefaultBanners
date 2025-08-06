@@ -52,28 +52,50 @@
       "nombre": "Soberano Oceánico",
       "descripcion": "El legendario Kyogre emerge de las profundidades. ¡Haz que la lluvia eterna juegue a tu favor!",
       "imagen_banner": "Gacha/Banners/kyogre_banner",
-      "imagen_banner_url": "https://raw.githubusercontent.com/Zik-pkmn/DefaultBanners/main/BANNER_EXAMPLE.png",
-      "fecha_inicio": "2025-07-20", "fecha_fin": "2025-08-09",
-      "coste_item": "TICKETFUGAZ", "coste_cantidad": 1,
-      "pity_hard_cap_5": 90, "soft_pity_start_5": 75, "pity_hard_cap_4": 10,
-      "tasas_base": {"tasa_5_estrellas": 0.6, "tasa_4_estrellas": 5.1, "tasa_3_estrellas": 94.3},
+      "imagen_banner_url": "https://raw.githubusercontent.com/Zik-pkmn/Gacha-assets/main/kyogre_banner_hd.png",
+      "fecha_inicio": "2025-07-20",
+      "fecha_fin": "2025-08-09",
+      "coste_item": "TICKETFUGAZ",
+      "coste_cantidad": 1,
+      "pity_hard_cap_5": 90,
+      "soft_pity_start_5": 75,
+      "pity_hard_cap_4": 10,
+      "tasas_base": {
+        "tasa_5_estrellas": 0.6,
+        "tasa_4_estrellas": 5.1,
+        "tasa_3_estrellas": 94.3
+      },
       "modificadores_de_tasa": [
         {
-          "condicion": { "tipo": "ITEM_EN_BOLSA", "id": "BLUEORB" },
+          "condicion": { "tipo": "TIENE_ITEM", "id": "BLUEORB" },
           "efecto": { "aumentar_tasa_5": 99.4 }
         }
       ],
       "modificadores_de_garantia": [
         {
-          "condicion": { "tipo": "ITEM_EN_BOLSA", "id": "BLUEORB" },
+          "condicion": { "tipo": "TIENE_ITEM", "id": "BLUEORB" },
           "efecto": { "garantizar_destacado_5_estrellas": true }
         }
       ],
       "recompensas": {
-        "pool_5_estrellas_destacado": [{"tipo": "POKEMON", "id": "KYOGRE", "propiedades": {"nivel": 70}}],
+        "pool_5_estrellas_destacado": [
+          {
+            "tipo": "POKEMON",
+            "id": "KYOGRE",
+            "propiedades": {
+              "nivel": 70,
+              "naturaleza": "MODEST",
+              "movimientos": ["WATERSPOUT", "THUNDER", "ICEBEAM", "CALMMIND"]
+            }
+          }
+        ],
         "pool_5_estrellas_general": [{"ref_pool": "pool_5_estrellas_permanente"}],
-        "tasa_destacado_4_estrellas": 75,
-        "pool_4_estrellas_destacado": [{"tipo": "POKEMON", "id": "SHARPEDO"}, {"tipo": "POKEMON", "id": "MILOTIC"}, {"tipo": "POKEMON", "id": "CRAWDAUNT"}],
+        "tasa_destacado_4_estrellas": 50,
+        "pool_4_estrellas_destacado": [
+          {"tipo": "POKEMON", "id": "SHARPEDO"},
+          {"tipo": "POKEMON", "id": "MILOTIC"},
+          {"tipo": "POKEMON", "id": "CRAWDAUNT"}
+        ],
         "pool_4_estrellas_general": [{"ref_pool": "Pool_Relleno_4_Estrellas"}],
         "pool_3_estrellas": [{"ref_pool": "Pool_Relleno_3_Estrellas"}]
       }
@@ -223,6 +245,7 @@
     }
   ]
 }
+
 
 
 
