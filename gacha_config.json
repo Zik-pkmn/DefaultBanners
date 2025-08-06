@@ -52,7 +52,7 @@
       "nombre": "Soberano Oceánico",
       "descripcion": "El legendario Kyogre emerge de las profundidades. ¡Haz que la lluvia eterna juegue a tu favor!",
       "imagen_banner": "Gacha/Banners/kyogre_banner",
-      "imagen_banner_url": "https://github.com/Zik-pkmn/DefaultBanners/blob/main/BANNER_EXAMPLE.png"
+      "imagen_banner_url": "http://raw.githubusercontent.com/Zik-pkmn/DefaultBanners/main/BANNER_EXAMPLE.png"
       "fecha_inicio": "2025-07-20", "fecha_fin": "2025-08-09",
       "coste_item": "TICKETFUGAZ", "coste_cantidad": 1,
       "pity_hard_cap_5": 90, "soft_pity_start_5": 75, "pity_hard_cap_4": 10,
@@ -147,6 +147,7 @@
     }
   ]
 }
+
 
 
 
