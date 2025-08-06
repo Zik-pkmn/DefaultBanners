@@ -1,6 +1,6 @@
 {
   "version": "2.1.1",
-  "config_version": "2025072013",
+  "config_version": "2025072014",
 
   "__documentation": {
     "motivo_de_este_archivo": "Este es un archivo de ejemplo avanzado para el Deluxe Gacha System. Muestra cómo configurar banners promocionales complejos, pools de relleno masivos y modificadores de tasa condicionales. Úsalo como base para tus propias creaciones.",
@@ -113,6 +113,82 @@
         "pool_4_estrellas_general": [{"ref_pool": "Pool_Relleno_4_Estrellas"}],
         "pool_3_estrellas": [{"ref_pool": "Pool_Relleno_3_Estrellas"}]
       }
+    },
+    {
+      "id": "promo_cynthia_garchomp_2025_08",
+      "nombre": "Legado de la Campeona",
+      "descripcion": "Siente el poder de la campeona de Sinnoh, Cynthia. Su Garchomp, criado con esmero, ¡ahora puede unirse a tu equipo!",
+      "imagen_banner": "Gacha/Banners/cynthia_banner",
+      "imagen_banner_url": "https://raw.githubusercontent.com/Zik-pkmn/Gacha-assets/main/cynthia_banner_hd.png",
+      "fecha_inicio": "2025-08-10",
+      "fecha_fin": "2025-08-31",
+      "coste_item": "TICKETFUGAZ",
+      "coste_cantidad": 1,
+      "pity_hard_cap_5": 90,
+      "soft_pity_start_5": 75,
+      "pity_hard_cap_4": 10,
+      "tasas_base": {
+        "tasa_5_estrellas": 0.6,
+        "tasa_4_estrellas": 5.1,
+        "tasa_3_estrellas": 94.3
+      },
+      "recompensas": {
+        "pool_5_estrellas_destacado": [
+          {
+            "tipo": "POKEMON",
+            "id": "GARCHOMP",
+            "propiedades": {
+              "nivel": 78,
+              "nombre_pokemon": "Garchomp de Cynthia",
+              "especie": "GARCHOMP",
+              "forma": 0,
+              "entrenador_original": "Cynthia",
+              "pokeball": "POKEBALL",
+              "shiny": false,
+              "shiny_rate": 0.05,
+              "sombra": false,
+              "genero": 0,
+              "naturaleza": "JOLLY",
+              "ivs": { "HP": 31, "ATK": 31, "DEF": 31, "SPATK": 12, "SPDEF": 31, "SPEED": 31 },
+              "evs": { "ATK": 252, "SPEED": 252, "HP": 4 },
+              "felicidad": 255,
+              "habilidad_oculta": true,
+              "movimientos": ["DRAGONRUSH", "EARTHQUAKE", "BRICKBREAK", "GIGAIMPACT"],
+              "objeto_equipado": "SITRUSBERRY",
+              "cinta": "CHAMPIONRIBBON",
+              "pokerus": false,
+              "origen": {
+                "mapa_origen_id": 42,
+                "mapa_origen_texto": "Monte Corona",
+                "nivel_obtencion": 24,
+                "obtenido_de_huevo": true,
+                "mapa_huevo_id": 50,
+                "mapa_huevo_texto": "Ciudad Celeste (Sinnoh)",
+                "fecha_obtencion": "FECHA_ACTUAL",
+                "fecha_huevo": "2024-01-15",
+                "idioma": 7
+              }
+            }
+          }
+        ],
+        "pool_5_estrellas_general": [{"ref_pool": "pool_5_estrellas_permanente"}],
+        "tasa_destacado_4_estrellas": 75,
+        "pool_4_estrellas_destacado": [
+          {
+            "tipo": "POKEMON",
+            "id": "LUCARIO",
+            "propiedades": {
+              "nivel": 76,
+              "naturaleza": "MODEST",
+              "movimientos": ["AURASPHERE", "DRAGONPULSE", "PSYCHIC", "EXTREMESPEED"]
+            }
+          },
+          {"tipo": "POKEMON", "id": "SPIRITOMB"},
+          {"tipo": "POKEMON", "id": "ROSERADE"}
+        ],
+        "pool_4_estrellas_general": [{"ref_pool": "Pool_Relleno_4_Estrellas"}],
+        "pool_3_estrellas": [{"ref_pool": "Pool_Relleno_3_Estrellas"}]
+      }
     }
   ],
   
@@ -147,6 +223,7 @@
     }
   ]
 }
+
 
 
 
