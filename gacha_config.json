@@ -1,6 +1,6 @@
 {
   "version": "2.1.1",
-  "config_version": "2025072022",
+  "config_version": "2025072023",
 
   "__documentation": {
     "motivo_de_este_archivo": "Este es un archivo de ejemplo avanzado para el Deluxe Gacha System. Muestra cómo configurar banners promocionales complejos, pools de relleno masivos y modificadores de tasa condicionales. Úsalo como base para tus propias creaciones.",
@@ -51,7 +51,7 @@
           "nivel": 55, "shiny_rate": 0.3, "objeto_equipado": "LIFEORB",
           "ivs": { "HP": 31, "ATK": 31, "DEF": 31, "SPATK": 31, "SPDEF": 31, "SPEED": 31 },
           "evs": { "ATK": 252, "SPEED": 252, "SPDEF": 4 },
-          "movimientos": ["SWORDSDANCE", "SCALESHOT", "EARTHQUAKE", "STONEEDGE"]
+          "movimientos": ["SWORDSDANCE", "SCALEHSOT", "EARTHQUAKE", "STONEEDGE"]
         }
       },
       {
@@ -122,31 +122,30 @@
       {"tipo": "POKEMON", "id": "TOXTRICITY"}, {"tipo": "POKEMON", "id": "CORVIKNIGHT"}
     ],
     "pool_4_estrellas_objetos": [
+      {"tipo": "ITEM", "id": "ULTRABALL", "cantidad": 20}, {"tipo": "ITEM", "id": "MAXPOTION", "cantidad": 15},
+      {"tipo": "ITEM", "id": "FULLRESTORE", "cantidad": 10}, {"tipo": "ITEM", "id": "MAXREVIVE", "cantidad": 5},
       {"tipo": "ITEM", "id": "RARECANDY", "cantidad": 5}, {"tipo": "ITEM", "id": "PPMAX", "cantidad": 1},
-      {"tipo": "ITEM", "id": "ABILITYCAPSULE", "cantidad": 1}, {"tipo": "ITEM", "id": "ABILITYPATCH", "cantidad": 1},
-      {"tipo": "ITEM", "id": "MASTERBALL", "cantidad": 1}, {"tipo": "ITEM", "id": "RELICGOLD", "cantidad": 1},
-      {"tipo": "ITEM", "id": "BIGNUGGET", "cantidad": 1}, {"tipo": "ITEM", "id": "COMETSHARD", "cantidad": 1},
+      {"tipo": "ITEM", "id": "NUGGET", "cantidad": 3}, {"tipo": "ITEM", "id": "BIGMUSHROOM", "cantidad": 2},
+      {"tipo": "ITEM", "id": "RELICGOLD", "cantidad": 1}, {"tipo": "ITEM", "id": "HEARTSCALE", "cantidad": 10},
+      {"tipo": "ITEM", "id": "FIRESTONE", "cantidad": 2}, {"tipo": "ITEM", "id": "WATERSTONE", "cantidad": 2},
+      {"tipo": "ITEM", "id": "THUNDERSTONE", "cantidad": 2}, {"tipo": "ITEM", "id": "LEAFSTONE", "cantidad": 2},
+      {"tipo": "ITEM", "id": "MOONSTONE", "cantidad": 2}, {"tipo": "ITEM", "id": "SUNSTONE", "cantidad": 2},
+      {"tipo": "ITEM", "id": "SHINYSTONE", "cantidad": 2}, {"tipo": "ITEM", "id": "DUSKSTONE", "cantidad": 2},
+      {"tipo": "ITEM", "id": "DAWNSTONE", "cantidad": 2}, {"tipo": "ITEM", "id": "ICESTONE", "cantidad": 2},
+      {"tipo": "ITEM", "id": "PROTEIN", "cantidad": 2}, {"tipo": "ITEM", "id": "IRON", "cantidad": 2},
+      {"tipo": "ITEM", "id": "CALCIUM", "cantidad": 2}, {"tipo": "ITEM", "id": "ZINC", "cantidad": 2},
+      {"tipo": "ITEM", "id": "CARBOS", "cantidad": 2}, {"tipo": "ITEM", "id": "HPUP", "cantidad": 2},
       {"tipo": "ITEM", "id": "LIFEORB", "cantidad": 1}, {"tipo": "ITEM", "id": "FOCUSSASH", "cantidad": 1},
       {"tipo": "ITEM", "id": "CHOICEBAND", "cantidad": 1}, {"tipo": "ITEM", "id": "CHOICESPECS", "cantidad": 1},
       {"tipo": "ITEM", "id": "CHOICESCARF", "cantidad": 1}, {"tipo": "ITEM", "id": "ASSAULTVEST", "cantidad": 1},
       {"tipo": "ITEM", "id": "LEFTOVERS", "cantidad": 1}, {"tipo": "ITEM", "id": "ROCKYHELMET", "cantidad": 1},
-      {"tipo": "ITEM", "id": "EVIOLITE", "cantidad": 1}, {"tipo": "ITEM", "id": "LUCKYEGG", "cantidad": 1},
-      {"tipo": "ITEM", "id": "DESTINYKNOT", "cantidad": 1}, {"tipo": "ITEM", "id": "PROTECTOR", "cantidad": 1},
-      {"tipo": "ITEM", "id": "ELECTIRIZER", "cantidad": 1}, {"tipo": "ITEM", "id": "MAGMARIZER", "cantidad": 1},
-      {"tipo": "ITEM", "id": "REAPERCLOTH", "cantidad": 1}, {"tipo": "ITEM", "id": "DUBIOUSDISC", "cantidad": 1},
-      {"tipo": "ITEM", "id": "UPGRADE", "cantidad": 1}, {"tipo": "ITEM", "id": "PRISMSCALE", "cantidad": 1},
+      {"tipo": "ITEM", "id": "EVIOLITE", "cantidad": 1}, {"tipo": "ITEM", "id": "EXPSHARE", "cantidad": 1},
+      {"tipo": "ITEM", "id": "ABILITYCAPSULE", "cantidad": 1}, {"tipo": "ITEM", "id": "ABILITYPATCH", "cantidad": 1},
+      {"tipo": "ITEM", "id": "WEAKNESSPOLICY", "cantidad": 1}, {"tipo": "ITEM", "id": "LUCKYEGG", "cantidad": 1},
+      {"tipo": "ITEM", "id": "DESTINYKNOT", "cantidad": 1}, {"tipo": "ITEM", "id": "TM06", "cantidad": 1},
       {"tipo": "ITEM", "id": "TM13", "cantidad": 1}, {"tipo": "ITEM", "id": "TM14", "cantidad": 1},
       {"tipo": "ITEM", "id": "TM15", "cantidad": 1}, {"tipo": "ITEM", "id": "TM24", "cantidad": 1},
-      {"tipo": "ITEM", "id": "TM25", "cantidad": 1}, {"tipo": "ITEM", "id": "TM26", "cantidad": 1},
-      {"tipo": "ITEM", "id": "TM30", "cantidad": 1}, {"tipo": "ITEM", "id": "TM36", "cantidad": 1},
-      {"tipo": "ITEM", "id": "TM50", "cantidad": 1}, {"tipo": "ITEM", "id": "TM52", "cantidad": 1},
-      {"tipo": "ITEM", "id": "TM53", "cantidad": 1}, {"tipo": "ITEM", "id": "TM59", "cantidad": 1},
-      {"tipo": "ITEM", "id": "TM68", "cantidad": 1}, {"tipo": "ITEM", "id": "TM71", "cantidad": 1},
-      {"tipo": "ITEM", "id": "TM80", "cantidad": 1}, {"tipo": "ITEM", "id": "TM91", "cantidad": 1},
-      {"tipo": "ITEM", "id": "MAXREVIVE", "cantidad": 10}, {"tipo": "ITEM", "id": "FULLRESTORE", "cantidad": 20},
-      {"tipo": "ITEM", "id": "MAXELIXIR", "cantidad": 5}, {"tipo": "ITEM", "id": "EXPCANDYXL", "cantidad": 1},
-      {"tipo": "ITEM", "id": "FRESHSTARTMOCHI", "cantidad": 1}, {"tipo": "ITEM", "id": "ADAMANTMINT", "cantidad": 1},
-      {"tipo": "ITEM", "id": "JOLLYMINT", "cantidad": 1}, {"tipo": "ITEM", "id": "MODESTMINT", "cantidad": 1}
+      {"tipo": "ITEM", "id": "TM25", "cantidad": 1}, {"tipo": "ITEM", "id": "TM26", "cantidad": 1}
     ],
     "pool_3_estrellas_pokemon": [
       {"tipo": "POKEMON", "id": "PIDGEOTTO"}, {"tipo": "POKEMON", "id": "RATICATE"},
@@ -176,30 +175,30 @@
       {"tipo": "POKEMON", "id": "PINSIR"}, {"tipo": "POKEMON", "id": "TAUROS"}
     ],
     "pool_3_estrellas_objetos": [
-      {"tipo": "ITEM", "id": "GREATBALL", "cantidad": 15}, {"tipo": "ITEM", "id": "ULTRABALL", "cantidad": 5},
-      {"tipo": "ITEM", "id": "HYPERPOTION", "cantidad": 10}, {"tipo": "ITEM", "id": "FULLHEAL", "cantidad": 10},
+      {"tipo": "ITEM", "id": "GREATBALL", "cantidad": 15}, {"tipo": "ITEM", "id": "SUPERPOTION", "cantidad": 20},
+      {"tipo": "ITEM", "id": "HYPERPOTION", "cantidad": 5}, {"tipo": "ITEM", "id": "FULLHEAL", "cantidad": 10},
       {"tipo": "ITEM", "id": "REVIVE", "cantidad": 5}, {"tipo": "ITEM", "id": "MAXREPEL", "cantidad": 10},
-      {"tipo": "ITEM", "id": "BIGMUSHROOM", "cantidad": 1}, {"tipo": "ITEM", "id": "BIGPEARL", "cantidad": 1},
-      {"tipo": "ITEM", "id": "STARPIECE", "cantidad": 1}, {"tipo": "ITEM", "id": "NUGGET", "cantidad": 1},
-      {"tipo": "ITEM", "id": "HEARTSCALE", "cantidad": 3}, {"tipo": "ITEM", "id": "FIRESTONE", "cantidad": 1},
-      {"tipo": "ITEM", "id": "WATERSTONE", "cantidad": 1}, {"tipo": "ITEM", "id": "THUNDERSTONE", "cantidad": 1},
-      {"tipo": "ITEM", "id": "LEAFSTONE", "cantidad": 1}, {"tipo": "ITEM", "id": "MOONSTONE", "cantidad": 1},
-      {"tipo": "ITEM", "id": "SUNSTONE", "cantidad": 1}, {"tipo": "ITEM", "id": "SHINYSTONE", "cantidad": 1},
-      {"tipo": "ITEM", "id": "DUSKSTONE", "cantidad": 1}, {"tipo": "ITEM", "id": "DAWNSTONE", "cantidad": 1},
-      {"tipo": "ITEM", "id": "ICESTONE", "cantidad": 1}, {"tipo": "ITEM", "id": "OVALSTONE", "cantidad": 1},
-      {"tipo": "ITEM", "id": "PROTEIN", "cantidad": 1}, {"tipo": "ITEM", "id": "IRON", "cantidad": 1},
-      {"tipo": "ITEM", "id": "CALCIUM", "cantidad": 1}, {"tipo": "ITEM", "id": "ZINC", "cantidad": 1},
-      {"tipo": "ITEM", "id": "CARBOS", "cantidad": 1}, {"tipo": "ITEM", "id": "HPUP", "cantidad": 1},
-      {"tipo": "ITEM", "id": "HEALTHWING", "cantidad": 3}, {"tipo": "ITEM", "id": "MUSCLEWING", "cantidad": 3},
-      {"tipo": "ITEM", "id": "RESISTWING", "cantidad": 3}, {"tipo": "ITEM", "id": "GENIUSWING", "cantidad": 3},
-      {"tipo": "ITEM", "id": "CLEVERWING", "cantidad": 3}, {"tipo": "ITEM", "id": "SWIFTWING", "cantidad": 3},
-      {"tipo": "ITEM", "id": "PPUP", "cantidad": 1}, {"tipo": "ITEM", "id": "EXPCANDYL", "cantidad": 1},
-      {"tipo": "ITEM", "id": "CHARCOAL", "cantidad": 1}, {"tipo": "ITEM", "id": "MYSTICWATER", "cantidad": 1},
-      {"tipo": "ITEM", "id": "MAGNET", "cantidad": 1}, {"tipo": "ITEM", "id": "MIRACLESEED", "cantidad": 1},
-      {"tipo": "ITEM", "id": "NEVERMELTICE", "cantidad": 1}, {"tipo": "ITEM", "id": "BLACKBELT", "cantidad": 1},
-      {"tipo": "ITEM", "id": "POISONBARB", "cantidad": 1}, {"tipo": "ITEM", "id": "SOFTSAND", "cantidad": 1},
-      {"tipo": "ITEM", "id": "SHARPBEAK", "cantidad": 1}, {"tipo": "ITEM", "id": "TWISTEDSPOON", "cantidad": 1},
-      {"tipo": "ITEM", "id": "SILVERPOWDER", "cantidad": 1}, {"tipo": "ITEM", "id": "HARDSTONE", "cantidad": 1}
+      {"tipo": "ITEM", "id": "ESCAPEROPE", "cantidad": 5}, {"tipo": "ITEM", "id": "HONEY", "cantidad": 3},
+      {"tipo": "ITEM", "id": "TINYMUSHROOM", "cantidad": 4}, {"tipo": "ITEM", "id": "BIGMUSHROOM", "cantidad": 1},
+      {"tipo": "ITEM", "id": "PEARL", "cantidad": 3}, {"tipo": "ITEM", "id": "BIGPEARL", "cantidad": 1},
+      {"tipo": "ITEM", "id": "STARDUST", "cantidad": 5}, {"tipo": "ITEM", "id": "STARPIECE", "cantidad": 1},
+      {"tipo": "ITEM", "id": "ORANBERRY", "cantidad": 10}, {"tipo": "ITEM", "id": "SITRUSBERRY", "cantidad": 5},
+      {"tipo": "ITEM", "id": "CHERIBERRY", "cantidad": 10}, {"tipo": "ITEM", "id": "CHESTOBERRY", "cantidad": 10},
+      {"tipo": "ITEM", "id": "PECHABERRY", "cantidad": 10}, {"tipo": "ITEM", "id": "RAWSTBERRY", "cantidad": 10},
+      {"tipo": "ITEM", "id": "ASPEARBERRY", "cantidad": 10}, {"tipo": "ITEM", "id": "LEPPABERRY", "cantidad": 5},
+      {"tipo": "ITEM", "id": "PERSIMBERRY", "cantidad": 5}, {"tipo": "ITEM", "id": "LUMBERRY", "cantidad": 2},
+      {"tipo": "ITEM", "id": "REDSHARD", "cantidad": 2}, {"tipo": "ITEM", "id": "BLUESHARD", "cantidad": 2},
+      {"tipo": "ITEM", "id": "YELLOWSHARD", "cantidad": 2}, {"tipo": "ITEM", "id": "GREENSHARD", "cantidad": 2},
+      {"tipo": "ITEM", "id": "HEARTSCALE", "cantidad": 3}, {"tipo": "ITEM", "id": "EVERSTONE", "cantidad": 1},
+      {"tipo": "ITEM", "id": "PRETTYFEATHER", "cantidad": 10}, {"tipo": "ITEM", "id": "HEALTHFEATHER", "cantidad": 3},
+      {"tipo": "ITEM", "id": "MUSCLEFEATHER", "cantidad": 3}, {"tipo": "ITEM", "id": "RESISTFEATHER", "cantidad": 3},
+      {"tipo": "ITEM", "id": "GENIUSFEATHER", "cantidad": 3}, {"tipo": "ITEM", "id": "CLEVERFEATHER", "cantidad": 3},
+      {"tipo": "ITEM", "id": "SWIFTFEATHER", "cantidad": 3}, {"tipo": "ITEM", "id": "OVALSTONE", "cantidad": 1},
+      {"tipo": "ITEM", "id": "SMOKEBALL", "cantidad": 1}, {"tipo": "ITEM", "id": "CLEANSETAG", "cantidad": 1},
+      {"tipo": "ITEM", "id": "LEEK", "cantidad": 1}, {"tipo": "ITEM", "id": "THICKCLUB", "cantidad": 1},
+      {"tipo": "ITEM", "id": "LUCKYPUNCH", "cantidad": 1}, {"tipo": "ITEM", "id": "METALPOWDER", "cantidad": 1},
+      {"tipo": "ITEM", "id": "QUICKPOWDER", "cantidad": 1}, {"tipo": "ITEM", "id": "BLACKSLUDGE", "cantidad": 1},
+      {"tipo": "ITEM", "id": "IRONBALL", "cantidad": 1}, {"tipo": "ITEM", "id": "LAGGINGTAIL", "cantidad": 1}
     ]
   },
 
@@ -500,5 +499,3 @@
     }
   ]
 }
-
-
