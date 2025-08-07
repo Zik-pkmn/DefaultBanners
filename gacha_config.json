@@ -1,31 +1,204 @@
 {
   "version": "2.1.1",
-  "config_version": "2025072020",
+  "config_version": "2025072022",
 
   "__documentation": {
     "motivo_de_este_archivo": "Este es un archivo de ejemplo avanzado para el Deluxe Gacha System. Muestra cómo configurar banners promocionales complejos, pools de relleno masivos y modificadores de tasa condicionales. Úsalo como base para tus propias creaciones.",
     "versionado": {
-      "info": "El 'config_version' es clave. Cuando subas una nueva versión de este archivo a tu servidor (Pastebin), incrementa este número. El juego lo detectará y descargará la actualización."
+      "info": "El 'config_version' es clave. Cuando subas una nueva versión de este archivo a tu servidor, incrementa este número. El juego lo detectará y descargará la actualización."
     },
-    "logica_4_estrellas": {
-      "info": "Para evitar la 'dilución de pools', los banners promocionales ahora separan los 4 estrellas en 'destacado' y 'general'.",
-      "tasa_destacado_4_estrellas": "Es un porcentaje (0-100) que determina la probabilidad de que un 4 estrellas sea del pool 'destacado'. Si no se especifica, por defecto es 50%. Un valor de 75 significa un 75% de probabilidad de obtener un 4* destacado."
+    "logica_pools": {
+      "info": "Los banners ahora usan pools separados para Pokémon y objetos, permitiendo un control más fino. Un banner general puede referenciar ambos pools para mezclar recompensas, mientras que un banner temático puede usar solo uno."
     }
   },
 
   "pools_reutilizables": {
     "pool_5_estrellas_permanente": [
-      {"tipo": "POKEMON", "id": "DRAGONITE", "propiedades": {"nivel": 50, "shiny_rate": 0.1}},
-      {"tipo": "POKEMON", "id": "TYRANITAR", "propiedades": {"nivel": 50, "shiny_rate": 0.1}},
-      {"tipo": "POKEMON", "id": "SALAMENCE", "propiedades": {"nivel": 50, "shiny_rate": 0.1}},
-      {"tipo": "POKEMON", "id": "METAGROSS", "propiedades": {"nivel": 50, "shiny_rate": 0.1}},
-      {"tipo": "POKEMON", "id": "GARCHOMP", "propiedades": {"nivel": 50, "shiny_rate": 0.1}}
+      {
+        "tipo": "POKEMON", "id": "DRAGONITE", "propiedades": {
+          "nivel": 55, "shiny_rate": 0.3, "objeto_equipado": "HEAVYDUTYBOOTS",
+          "ivs": { "HP": 31, "ATK": 31, "DEF": 31, "SPATK": 31, "SPDEF": 31, "SPEED": 31 },
+          "evs": { "ATK": 252, "SPEED": 252, "SPDEF": 4 },
+          "movimientos": ["DRAGONDANCE", "DUALWINGBEAT", "EARTHQUAKE", "EXTREMESPEED"]
+        }
+      },
+      {
+        "tipo": "POKEMON", "id": "TYRANITAR", "propiedades": {
+          "nivel": 55, "shiny_rate": 0.3, "objeto_equipado": "CHOICEBAND",
+          "ivs": { "HP": 31, "ATK": 31, "DEF": 31, "SPATK": 31, "SPDEF": 31, "SPEED": 31 },
+          "evs": { "ATK": 252, "SPEED": 252, "SPDEF": 4 },
+          "movimientos": ["STONEEDGE", "CRUNCH", "EARTHQUAKE", "SUPERPOWER"]
+        }
+      },
+      {
+        "tipo": "POKEMON", "id": "SALAMENCE", "propiedades": {
+          "nivel": 55, "shiny_rate": 0.3, "objeto_equipado": "HEAVYDUTYBOOTS",
+          "ivs": { "HP": 31, "ATK": 31, "DEF": 31, "SPATK": 31, "SPDEF": 31, "SPEED": 31 },
+          "evs": { "ATK": 252, "SPEED": 252, "SPDEF": 4 },
+          "movimientos": ["DRAGONDANCE", "DUALWINGBEAT", "EARTHQUAKE", "ROOST"]
+        }
+      },
+      {
+        "tipo": "POKEMON", "id": "METAGROSS", "propiedades": {
+          "nivel": 55, "shiny_rate": 0.3, "objeto_equipado": "CHOICEBAND",
+          "ivs": { "HP": 31, "ATK": 31, "DEF": 31, "SPATK": 31, "SPDEF": 31, "SPEED": 31 },
+          "evs": { "ATK": 252, "SPEED": 252, "HP": 4 },
+          "movimientos": ["METEORMASH", "ZENHEADBUTT", "BULLETPUNCH", "EARTHQUAKE"]
+        }
+      },
+      {
+        "tipo": "POKEMON", "id": "GARCHOMP", "propiedades": {
+          "nivel": 55, "shiny_rate": 0.3, "objeto_equipado": "LIFEORB",
+          "ivs": { "HP": 31, "ATK": 31, "DEF": 31, "SPATK": 31, "SPDEF": 31, "SPEED": 31 },
+          "evs": { "ATK": 252, "SPEED": 252, "SPDEF": 4 },
+          "movimientos": ["SWORDSDANCE", "SCALEHSOT", "EARTHQUAKE", "STONEEDGE"]
+        }
+      },
+      {
+        "tipo": "POKEMON", "id": "HYDREIGON", "propiedades": {
+          "nivel": 55, "shiny_rate": 0.3, "objeto_equipado": "CHOICESPECS",
+          "ivs": { "HP": 31, "ATK": 31, "DEF": 31, "SPATK": 31, "SPDEF": 31, "SPEED": 31 },
+          "evs": { "SPATK": 252, "SPEED": 252, "SPDEF": 4 },
+          "movimientos": ["DRACOMETEOR", "DARKPULSE", "FLASHCANNON", "UTURN"]
+        }
+      },
+      {
+        "tipo": "POKEMON", "id": "GOODRA", "propiedades": {
+          "nivel": 55, "shiny_rate": 0.3, "objeto_equipado": "ASSAULTVEST",
+          "ivs": { "HP": 31, "ATK": 31, "DEF": 31, "SPATK": 31, "SPDEF": 31, "SPEED": 31 },
+          "evs": { "HP": 248, "SPATK": 252, "SPDEF": 8 },
+          "movimientos": ["DRACOMETEOR", "THUNDERBOLT", "SLUDGEBOMB", "FIREBLAST"]
+        }
+      },
+      {
+        "tipo": "POKEMON", "id": "KOMMOO", "propiedades": {
+          "nivel": 55, "shiny_rate": 0.3, "objeto_equipado": "LIFEORB",
+          "ivs": { "HP": 31, "ATK": 31, "DEF": 31, "SPATK": 31, "SPDEF": 31, "SPEED": 31 },
+          "evs": { "ATK": 252, "SPEED": 252, "SPDEF": 4 },
+          "movimientos": ["CLANGOROUSSOUL", "CLOSECOMBAT", "POISONJAB", "DRAINPUNCH"]
+        }
+      },
+      {
+        "tipo": "POKEMON", "id": "DRAGAPULT", "propiedades": {
+          "nivel": 55, "shiny_rate": 0.3, "objeto_equipado": "CHOICESPECS",
+          "ivs": { "HP": 31, "ATK": 31, "DEF": 31, "SPATK": 31, "SPDEF": 31, "SPEED": 31 },
+          "evs": { "SPATK": 252, "SPEED": 252, "HP": 4 },
+          "movimientos": ["DRACOMETEOR", "SHADOWBALL", "UTURN", "THUNDERBOLT"]
+        }
+      },
+      {
+        "tipo": "POKEMON", "id": "BAXCALIBUR", "propiedades": {
+          "nivel": 55, "shiny_rate": 0.3, "objeto_equipado": "LOADEDDICE",
+          "ivs": { "HP": 31, "ATK": 31, "DEF": 31, "SPATK": 31, "SPDEF": 31, "SPEED": 31 },
+          "evs": { "ATK": 252, "SPEED": 252, "HP": 4 },
+          "movimientos": ["GLAIVERUSH", "ICICLESPEAR", "EARTHQUAKE", "DRAGONDANCE"]
+        }
+      }
     ],
-    "Pool_Relleno_4_Estrellas": [
-      {"tipo": "ITEM", "id": "RARECANDY", "cantidad": 3}, {"tipo": "ITEM", "id": "PPUP", "cantidad": 1}, {"tipo": "ITEM", "id": "HEARTSCALE", "cantidad": 5}, {"tipo": "ITEM", "id": "ULTRABALL", "cantidad": 15}, {"tipo": "ITEM", "id": "HYPERPOTION", "cantidad": 20}, {"tipo": "ITEM", "id": "MAXREPEL", "cantidad": 25}, {"tipo": "ITEM", "id": "FULLHEAL", "cantidad": 15}, {"tipo": "ITEM", "id": "REVIVE", "cantidad": 8}, {"tipo": "ITEM", "id": "NUGGET", "cantidad": 1}, {"tipo": "ITEM", "id": "BIGPEARL", "cantidad": 2}, {"tipo": "ITEM", "id": "FIRESTONE", "cantidad": 1}, {"tipo": "ITEM", "id": "WATERSTONE", "cantidad": 1}, {"tipo": "ITEM", "id": "THUNDERSTONE", "cantidad": 1}, {"tipo": "ITEM", "id": "LEAFSTONE", "cantidad": 1}, {"tipo": "ITEM", "id": "MOONSTONE", "cantidad": 1}, {"tipo": "ITEM", "id": "SUNSTONE", "cantidad": 1}, {"tipo": "ITEM", "id": "DAWNSTONE", "cantidad": 1}, {"tipo": "ITEM", "id": "DUSKSTONE", "cantidad": 1}, {"tipo": "ITEM", "id": "SHINYSTONE", "cantidad": 1}, {"tipo": "ITEM", "id": "PROTEIN", "cantidad": 1}, {"tipo": "ITEM", "id": "IRON", "cantidad": 1}, {"tipo": "ITEM", "id": "CALCIUM", "cantidad": 1}, {"tipo": "ITEM", "id": "ZINC", "cantidad": 1}, {"tipo": "ITEM", "id": "CARBOS", "cantidad": 1}, {"tipo": "ITEM", "id": "HPUP", "cantidad": 1}, {"tipo": "POKEMON", "id": "GROWLITHE"}, {"tipo": "POKEMON", "id": "VULPIX"}, {"tipo": "POKEMON", "id": "PONYTA"}, {"tipo": "POKEMON", "id": "ABRA"}, {"tipo": "POKEMON", "id": "MACHOP"}, {"tipo": "POKEMON", "id": "SHELLOS"}, {"tipo": "POKEMON", "id": "GASTLY"}, {"tipo": "POKEMON", "id": "ONIX"}, {"tipo": "POKEMON", "id": "SCYTHER"}, {"tipo": "POKEMON", "id": "PINSIR"}, {"tipo": "POKEMON", "id": "TAUROS"}, {"tipo": "POKEMON", "id": "EEVEE", "propiedades": {"shiny_rate": 0.05}}, {"tipo": "POKEMON", "id": "PORYGON"}, {"tipo": "POKEMON", "id": "DRATINI", "propiedades": {"shiny_rate": 0.05}}, {"tipo": "POKEMON", "id": "LARVITAR"}, {"tipo": "POKEMON", "id": "RALTS"}, {"tipo": "POKEMON", "id": "BAGON"}, {"tipo": "POKEMON", "id": "BELDUM"}, {"tipo": "POKEMON", "id": "GIBLE"}, {"tipo": "POKEMON", "id": "RIOLU"}, {"tipo": "POKEMON", "id": "DEINO"}, {"tipo": "POKEMON", "id": "GOOMY"}, {"tipo": "POKEMON", "id": "JANGMOO"}, {"tipo": "POKEMON", "id": "DREEPY"}, {"tipo": "POKEMON", "id": "WOBBUFFET"}, {"tipo": "POKEMON", "id": "GOLBAT"}, {"tipo": "POKEMON", "id": "GRAVELER"}, {"tipo": "POKEMON", "id": "MAGNETON"}, {"tipo": "POKEMON", "id": "HAUNTER"}, {"tipo": "POKEMON", "id": "KADABRA"}, {"tipo": "POKEMON", "id": "MACHOKE"}, {"tipo": "POKEMON", "id": "WEEPINBELL"}, {"tipo": "POKEMON", "id": "GLOOM"}
+    "pool_4_estrellas_pokemon": [
+      {"tipo": "POKEMON", "id": "ARCANINE"}, {"tipo": "POKEMON", "id": "ALAKAZAM"},
+      {"tipo": "POKEMON", "id": "MACHAMP"}, {"tipo": "POKEMON", "id": "GENGAR"},
+      {"tipo": "POKEMON", "id": "GYARADOS"}, {"tipo": "POKEMON", "id": "LAPRAS"},
+      {"tipo": "POKEMON", "id": "VAPOREON"}, {"tipo": "POKEMON", "id": "JOLTEON"},
+      {"tipo": "POKEMON", "id": "FLAREON"}, {"tipo": "POKEMON", "id": "AERODACTYL"},
+      {"tipo": "POKEMON", "id": "SNORLAX"}, {"tipo": "POKEMON", "id": "SCIZOR"},
+      {"tipo": "POKEMON", "id": "HERACROSS"}, {"tipo": "POKEMON", "id": "ESPEON"},
+      {"tipo": "POKEMON", "id": "UMBREON"}, {"tipo": "POKEMON", "id": "SKARMORY"},
+      {"tipo": "POKEMON", "id": "HOUNDOOM"}, {"tipo": "POKEMON", "id": "KINGDRA"},
+      {"tipo": "POKEMON", "id": "DONPHAN"}, {"tipo": "POKEMON", "id": "PORYGON2"},
+      {"tipo": "POKEMON", "id": "BLISsey"}, {"tipo": "POKEMON", "id": "LUDICOLO"},
+      {"tipo": "POKEMON", "id": "GARDEVOIR"}, {"tipo": "POKEMON", "id": "BRELOOM"},
+      {"tipo": "POKEMON", "id": "AGGRON"}, {"tipo": "POKEMON", "id": "FLYGON"},
+      {"tipo": "POKEMON", "id": "ALTARIA"}, {"tipo": "POKEMON", "id": "MILOTIC"},
+      {"tipo": "POKEMON", "id": "ABSOL"}, {"tipo": "POKEMON", "id": "INFERNAPE"},
+      {"tipo": "POKEMON", "id": "STARAPTOR"}, {"tipo": "POKEMON", "id": "ROSERADE"},
+      {"tipo": "POKEMON", "id": "HONCHKROW"}, {"tipo": "POKEMON", "id": "LUCARIO"},
+      {"tipo": "POKEMON", "id": "TOGEKISS"}, {"tipo": "POKEMON", "id": "LEAFEON"},
+      {"tipo": "POKEMON", "id": "GLACEON"}, {"tipo": "POKEMON", "id": "GALLADE"},
+      {"tipo": "POKEMON", "id": "EXCADRILL"}, {"tipo": "POKEMON", "id": "CONKELDURR"},
+      {"tipo": "POKEMON", "id": "CHANDELURE"}, {"tipo": "POKEMON", "id": "HAXORUS"},
+      {"tipo": "POKEMON", "id": "VOLCARONA"}, {"tipo": "POKEMON", "id": "TALONFLAME"},
+      {"tipo": "POKEMON", "id": "AEGISLASH"}, {"tipo": "POKEMON", "id": "SYLVEON"},
+      {"tipo": "POKEMON", "id": "TOXTRICITY"}, {"tipo": "POKEMON", "id": "CORVIKNIGHT"}
     ],
-    "Pool_Relleno_3_Estrellas": [
-      {"tipo": "ITEM", "id": "POKEBALL", "cantidad": 25}, {"tipo": "ITEM", "id": "GREATBALL", "cantidad": 15}, {"tipo": "ITEM", "id": "POTION", "cantidad": 30}, {"tipo": "ITEM", "id": "SUPERPOTION", "cantidad": 15}, {"tipo": "ITEM", "id": "ANTIDOTE", "cantidad": 20}, {"tipo": "ITEM", "id": "PARALYZEHEAL", "cantidad": 20}, {"tipo": "ITEM", "id": "AWAKENING", "cantidad": 20}, {"tipo": "ITEM", "id": "BURNHEAL", "cantidad": 20}, {"tipo": "ITEM", "id": "ICEHEAL", "cantidad": 20}, {"tipo": "ITEM", "id": "REPEL", "cantidad": 30}, {"tipo": "ITEM", "id": "SUPERREPEL", "cantidad": 15}, {"tipo": "ITEM", "id": "ESCAPEROPE", "cantidad": 5}, {"tipo": "ITEM", "id": "ORANBERRY", "cantidad": 10}, {"tipo": "ITEM", "id": "PECHABERRY", "cantidad": 10}, {"tipo": "ITEM", "id": "CHERIBERRY", "cantidad": 10}, {"tipo": "ITEM", "id": "TINYMUSHROOM", "cantidad": 5}, {"tipo": "ITEM", "id": "PEARL", "cantidad": 3}, {"tipo": "ITEM", "id": "STARDUST", "cantidad": 2}, {"tipo": "POKEMON", "id": "PIDGEY"}, {"tipo": "POKEMON", "id": "RATTATA"}, {"tipo": "POKEMON", "id": "ZUBAT"}, {"tipo": "POKEMON", "id": "GEODUDE"}, {"tipo": "POKEMON", "id": "CATERPIE"}, {"tipo": "POKEMON", "id": "WEEDLE"}, {"tipo": "POKEMON", "id": "SPEAROW"}, {"tipo": "POKEMON", "id": "EKANS"}, {"tipo": "POKEMON", "id": "SANDSHREW"}, {"tipo": "POKEMON", "id": "NIDORANfE"}, {"tipo": "POKEMON", "id": "NIDORANmA"}, {"tipo": "POKEMON", "id": "ODDISH"}, {"tipo": "POKEMON", "id": "PARAS"}, {"tipo": "POKEMON", "id": "VENONAT"}, {"tipo": "POKEMON", "id": "DIGLETT"}, {"tipo": "POKEMON", "id": "MEOWTH"}, {"tipo": "POKEMON", "id": "PSYDUCK"}, {"tipo": "POKEMON", "id": "MANKEY"}, {"tipo": "POKEMON", "id": "POLIWAG"}, {"tipo": "POKEMON", "id": "BELLSPROUT"}, {"tipo": "POKEMON", "id": "TENTACOOL"}, {"tipo": "POKEMON", "id": "SLOWPOKE"}, {"tipo": "POKEMON", "id": "MAGNEMITE"}, {"tipo": "POKEMON", "id": "SEEL"}, {"tipo": "POKEMON", "id": "GRIMER"}, {"tipo": "POKEMON", "id": "SHELLDER"}, {"tipo": "POKEMON", "id": "KRABBY"}, {"tipo": "POKEMON", "id": "VOLTORB"}, {"tipo": "POKEMON", "id": "HORSEA"}, {"tipo": "POKEMON", "id": "GOLDEEN"}, {"tipo": "POKEMON", "id": "STARYU"}, {"tipo": "POKEMON", "id": "MAGIKARP", "propiedades": {"nivel": 15, "nombre_pokemon": "El Campeón"}}
+    "pool_4_estrellas_objetos": [
+      {"tipo": "ITEM", "id": "ULTRABALL", "cantidad": 20}, {"tipo": "ITEM", "id": "MAXPOTION", "cantidad": 15},
+      {"tipo": "ITEM", "id": "FULLRESTORE", "cantidad": 10}, {"tipo": "ITEM", "id": "MAXREVIVE", "cantidad": 5},
+      {"tipo": "ITEM", "id": "RARECANDY", "cantidad": 5}, {"tipo": "ITEM", "id": "PPMAX", "cantidad": 1},
+      {"tipo": "ITEM", "id": "NUGGET", "cantidad": 3}, {"tipo": "ITEM", "id": "BIGMUSHROOM", "cantidad": 2},
+      {"tipo": "ITEM", "id": "RELICGOLD", "cantidad": 1}, {"tipo": "ITEM", "id": "HEARTSCALE", "cantidad": 10},
+      {"tipo": "ITEM", "id": "FIRESTONE", "cantidad": 2}, {"tipo": "ITEM", "id": "WATERSTONE", "cantidad": 2},
+      {"tipo": "ITEM", "id": "THUNDERSTONE", "cantidad": 2}, {"tipo": "ITEM", "id": "LEAFSTONE", "cantidad": 2},
+      {"tipo": "ITEM", "id": "MOONSTONE", "cantidad": 2}, {"tipo": "ITEM", "id": "SUNSTONE", "cantidad": 2},
+      {"tipo": "ITEM", "id": "SHINYSTONE", "cantidad": 2}, {"tipo": "ITEM", "id": "DUSKSTONE", "cantidad": 2},
+      {"tipo": "ITEM", "id": "DAWNSTONE", "cantidad": 2}, {"tipo": "ITEM", "id": "ICESTONE", "cantidad": 2},
+      {"tipo": "ITEM", "id": "PROTEIN", "cantidad": 2}, {"tipo": "ITEM", "id": "IRON", "cantidad": 2},
+      {"tipo": "ITEM", "id": "CALCIUM", "cantidad": 2}, {"tipo": "ITEM", "id": "ZINC", "cantidad": 2},
+      {"tipo": "ITEM", "id": "CARBOS", "cantidad": 2}, {"tipo": "ITEM", "id": "HPUP", "cantidad": 2},
+      {"tipo": "ITEM", "id": "LIFEORB", "cantidad": 1}, {"tipo": "ITEM", "id": "FOCUSSASH", "cantidad": 1},
+      {"tipo": "ITEM", "id": "CHOICEBAND", "cantidad": 1}, {"tipo": "ITEM", "id": "CHOICESPECS", "cantidad": 1},
+      {"tipo": "ITEM", "id": "CHOICESCARF", "cantidad": 1}, {"tipo": "ITEM", "id": "ASSAULTVEST", "cantidad": 1},
+      {"tipo": "ITEM", "id": "LEFTOVERS", "cantidad": 1}, {"tipo": "ITEM", "id": "ROCKYHELMET", "cantidad": 1},
+      {"tipo": "ITEM", "id": "EVIOLITE", "cantidad": 1}, {"tipo": "ITEM", "id": "EXPSHARE", "cantidad": 1},
+      {"tipo": "ITEM", "id": "ABILITYCAPSULE", "cantidad": 1}, {"tipo": "ITEM", "id": "BOTTLECAP", "cantidad": 1},
+      {"tipo": "ITEM", "id": "GOLDBOTTLECAP", "cantidad": 1}, {"tipo": "ITEM", "id": "LUCKYEGG", "cantidad": 1},
+      {"tipo": "ITEM", "id": "DESTINYKNOT", "cantidad": 1}, {"tipo": "ITEM", "id": "TM06", "cantidad": 1},
+      {"tipo": "ITEM", "id": "TM13", "cantidad": 1}, {"tipo": "ITEM", "id": "TM14", "cantidad": 1},
+      {"tipo": "ITEM", "id": "TM15", "cantidad": 1}, {"tipo": "ITEM", "id": "TM24", "cantidad": 1},
+      {"tipo": "ITEM", "id": "TM25", "cantidad": 1}, {"tipo": "ITEM", "id": "TM26", "cantidad": 1}
+    ],
+    "pool_3_estrellas_pokemon": [
+      {"tipo": "POKEMON", "id": "PIDGEOTTO"}, {"tipo": "POKEMON", "id": "RATICATE"},
+      {"tipo": "POKEMON", "id": "FEAROW"}, {"tipo": "POKEMON", "id": "ARBOK"},
+      {"tipo": "POKEMON", "id": "RAICHU"}, {"tipo": "POKEMON", "id": "SANDSLASH"},
+      {"tipo": "POKEMON", "id": "NIDOQUEEN"}, {"tipo": "POKEMON", "id": "NIDOKING"},
+      {"tipo": "POKEMON", "id": "CLEFABLE"}, {"tipo": "POKEMON", "id": "NINETALES"},
+      {"tipo": "POKEMON", "id": "WIGGLYTUFF"}, {"tipo": "POKEMON", "id": "GOLBAT"},
+      {"tipo": "POKEMON", "id": "VILEPLUME"}, {"tipo": "POKEMON", "id": "PARASECT"},
+      {"tipo": "POKEMON", "id": "VENOMOTH"}, {"tipo": "POKEMON", "id": "DUGTRIO"},
+      {"tipo": "POKEMON", "id": "PERSIAN"}, {"tipo": "POKEMON", "id": "GOLDUCK"},
+      {"tipo": "POKEMON", "id": "PRIMEAPE"}, {"tipo": "POKEMON", "id": "POLIWRATH"},
+      {"tipo": "POKEMON", "id": "VICTREEBEL"}, {"tipo": "POKEMON", "id": "TENTACRUEL"},
+      {"tipo": "POKEMON", "id": "GOLEM"}, {"tipo": "POKEMON", "id": "RAPIDASH"},
+      {"tipo": "POKEMON", "id": "SLOWBRO"}, {"tipo": "POKEMON", "id": "MAGNETON"},
+      {"tipo": "POKEMON", "id": "FARFETCHD"}, {"tipo": "POKEMON", "id": "DEWGONG"},
+      {"tipo": "POKEMON", "id": "MUK"}, {"tipo": "POKEMON", "id": "CLOYSTER"},
+      {"tipo": "POKEMON", "id": "HYPNO"}, {"tipo": "POKEMON", "id": "KINGLER"},
+      {"tipo": "POKEMON", "id": "ELECTRODE"}, {"tipo": "POKEMON", "id": "EXEGGUTOR"},
+      {"tipo": "POKEMON", "id": "MAROWAK"}, {"tipo": "POKEMON", "id": "HITMONLEE"},
+      {"tipo": "POKEMON", "id": "HITMONCHAN"}, {"tipo": "POKEMON", "id": "LICKITUNG"},
+      {"tipo": "POKEMON", "id": "WEEZING"}, {"tipo": "POKEMON", "id": "RHYDON"},
+      {"tipo": "POKEMON", "id": "CHANSEY"}, {"tipo": "POKEMON", "id": "TANGELA"},
+      {"tipo": "POKEMON", "id": "KANGASKHAN"}, {"tipo": "POKEMON", "id": "SEADRA"},
+      {"tipo": "POKEMON", "id": "SEAKING"}, {"tipo": "POKEMON", "id": "STARMIE"},
+      {"tipo": "POKEMON", "id": "MRMIME"}, {"tipo": "POKEMON", "id": "JYNX"},
+      {"tipo": "POKEMON", "id": "PINSIR"}, {"tipo": "POKEMON", "id": "TAUROS"}
+    ],
+    "pool_3_estrellas_objetos": [
+      {"tipo": "ITEM", "id": "GREATBALL", "cantidad": 15}, {"tipo": "ITEM", "id": "SUPERPOTION", "cantidad": 20},
+      {"tipo": "ITEM", "id": "HYPERPOTION", "cantidad": 5}, {"tipo": "ITEM", "id": "FULLHEAL", "cantidad": 10},
+      {"tipo": "ITEM", "id": "REVIVE", "cantidad": 5}, {"tipo": "ITEM", "id": "MAXREPEL", "cantidad": 10},
+      {"tipo": "ITEM", "id": "ESCAPEROPE", "cantidad": 5}, {"tipo": "ITEM", "id": "HONEY", "cantidad": 3},
+      {"tipo": "ITEM", "id": "TINYMUSHROOM", "cantidad": 4}, {"tipo": "ITEM", "id": "BIGMUSHROOM", "cantidad": 1},
+      {"tipo": "ITEM", "id": "PEARL", "cantidad": 3}, {"tipo": "ITEM", "id": "BIGPEARL", "cantidad": 1},
+      {"tipo": "ITEM", "id": "STARDUST", "cantidad": 5}, {"tipo": "ITEM", "id": "STARPIECE", "cantidad": 1},
+      {"tipo": "ITEM", "id": "ORANBERRY", "cantidad": 10}, {"tipo": "ITEM", "id": "SITRUSBERRY", "cantidad": 5},
+      {"tipo": "ITEM", "id": "CHERIBERRY", "cantidad": 10}, {"tipo": "ITEM", "id": "CHESTOBERRY", "cantidad": 10},
+      {"tipo": "ITEM", "id": "PECHABERRY", "cantidad": 10}, {"tipo": "ITEM", "id": "RAWSTBERRY", "cantidad": 10},
+      {"tipo": "ITEM", "id": "ASPEARBERRY", "cantidad": 10}, {"tipo": "ITEM", "id": "LEPPABERRY", "cantidad": 5},
+      {"tipo": "ITEM", "id": "PERSIMBERRY", "cantidad": 5}, {"tipo": "ITEM", "id": "LUMBERRY", "cantidad": 2},
+      {"tipo": "ITEM", "id": "REDSHARD", "cantidad": 2}, {"tipo": "ITEM", "id": "BLUESHARD", "cantidad": 2},
+      {"tipo": "ITEM", "id": "YELLOWSHARD", "cantidad": 2}, {"tipo": "ITEM", "id": "GREENSHARD", "cantidad": 2},
+      {"tipo": "ITEM", "id": "HEARTSCALE", "cantidad": 3}, {"tipo": "ITEM", "id": "EVERSTONE", "cantidad": 1},
+      {"tipo": "ITEM", "id": "PRETTYWING", "cantidad": 10}, {"tipo": "ITEM", "id": "HEALTHWING", "cantidad": 3},
+      {"tipo": "ITEM", "id": "MUSCLEWING", "cantidad": 3}, {"tipo": "ITEM", "id": "RESISTWING", "cantidad": 3},
+      {"tipo": "ITEM", "id": "GENIUSWING", "cantidad": 3}, {"tipo": "ITEM", "id": "CLEVERWING", "cantidad": 3},
+      {"tipo": "ITEM", "id": "SWIFTWING", "cantidad": 3}, {"tipo": "ITEM", "id": "OVALSTONE", "cantidad": 1},
+      {"tipo": "ITEM", "id": "SMOKEBALL", "cantidad": 1}, {"tipo": "ITEM", "id": "CLEANSETAG", "cantidad": 1},
+      {"tipo": "ITEM", "id": "STICK", "cantidad": 1}, {"tipo": "ITEM", "id": "THICKCLUB", "cantidad": 1},
+      {"tipo": "ITEM", "id": "LUCKYPUNCH", "cantidad": 1}, {"tipo": "ITEM", "id": "METALPOWDER", "cantidad": 1},
+      {"tipo": "ITEM", "id": "QUICKPOWDER", "cantidad": 1}, {"tipo": "ITEM", "id": "BLACKSLUDGE", "cantidad": 1},
+      {"tipo": "ITEM", "id": "IRONBALL", "cantidad": 1}, {"tipo": "ITEM", "id": "LAGGINGTAIL", "cantidad": 1}
     ]
   },
 
@@ -40,8 +213,14 @@
       "tasas_base": {"tasa_5_estrellas": 0.6, "tasa_4_estrellas": 5.1, "tasa_3_estrellas": 94.3},
       "recompensas": {
         "pool_5_estrellas": [{"ref_pool": "pool_5_estrellas_permanente"}],
-        "pool_4_estrellas": [{"ref_pool": "Pool_Relleno_4_Estrellas"}],
-        "pool_3_estrellas": [{"ref_pool": "Pool_Relleno_3_Estrellas"}]
+        "pool_4_estrellas": [
+          {"ref_pool": "pool_4_estrellas_pokemon"},
+          {"ref_pool": "pool_4_estrellas_objetos"}
+        ],
+        "pool_3_estrellas": [
+          {"ref_pool": "pool_3_estrellas_pokemon"},
+          {"ref_pool": "pool_3_estrellas_objetos"}
+        ]
       }
     }
   ],
@@ -96,8 +275,14 @@
           {"tipo": "POKEMON", "id": "MILOTIC"},
           {"tipo": "POKEMON", "id": "CRAWDAUNT"}
         ],
-        "pool_4_estrellas_general": [{"ref_pool": "Pool_Relleno_4_Estrellas"}],
-        "pool_3_estrellas": [{"ref_pool": "Pool_Relleno_3_Estrellas"}]
+        "pool_4_estrellas_general": [
+          {"ref_pool": "pool_4_estrellas_pokemon"},
+          {"ref_pool": "pool_4_estrellas_objetos"}
+        ],
+        "pool_3_estrellas": [
+          {"ref_pool": "pool_3_estrellas_pokemon"},
+          {"ref_pool": "pool_3_estrellas_objetos"}
+        ]
       }
     },
     {
@@ -138,8 +323,14 @@
           {"tipo": "POKEMON", "id": "RHYDON"},
           {"tipo": "POKEMON", "id": "EXCADRILL"}
         ],
-        "pool_4_estrellas_general": [{"ref_pool": "Pool_Relleno_4_Estrellas"}],
-        "pool_3_estrellas": [{"ref_pool": "Pool_Relleno_3_Estrellas"}]
+        "pool_4_estrellas_general": [
+          {"ref_pool": "pool_4_estrellas_pokemon"},
+          {"ref_pool": "pool_4_estrellas_objetos"}
+        ],
+        "pool_3_estrellas": [
+          {"ref_pool": "pool_3_estrellas_pokemon"},
+          {"ref_pool": "pool_3_estrellas_objetos"}
+        ]
       }
     },
     {
@@ -182,8 +373,14 @@
           {"tipo": "POKEMON", "id": "FLYGON"},
           {"tipo": "POKEMON", "id": "TROPIUS"}
         ],
-        "pool_4_estrellas_general": [{"ref_pool": "Pool_Relleno_4_Estrellas"}],
-        "pool_3_estrellas": [{"ref_pool": "Pool_Relleno_3_Estrellas"}]
+        "pool_4_estrellas_general": [
+          {"ref_pool": "pool_4_estrellas_pokemon"},
+          {"ref_pool": "pool_4_estrellas_objetos"}
+        ],
+        "pool_3_estrellas": [
+          {"ref_pool": "pool_3_estrellas_pokemon"},
+          {"ref_pool": "pool_3_estrellas_objetos"}
+        ]
       }
     },
     {
@@ -259,8 +456,14 @@
           {"tipo": "POKEMON", "id": "SPIRITOMB"},
           {"tipo": "POKEMON", "id": "ROSERADE"}
         ],
-        "pool_4_estrellas_general": [{"ref_pool": "Pool_Relleno_4_Estrellas"}],
-        "pool_3_estrellas": [{"ref_pool": "Pool_Relleno_3_Estrellas"}]
+        "pool_4_estrellas_general": [
+          {"ref_pool": "pool_4_estrellas_pokemon"},
+          {"ref_pool": "pool_4_estrellas_objetos"}
+        ],
+        "pool_3_estrellas": [
+          {"ref_pool": "pool_3_estrellas_pokemon"},
+          {"ref_pool": "pool_3_estrellas_objetos"}
+        ]
       }
     }
   ],
@@ -287,31 +490,12 @@
           { "tipo": "ITEM", "id": "ABILITYCAPSULE", "cantidad": [1, 10] }
         ],
         "pool_4_estrellas": [
-          { "ref_pool": "Pool_Relleno_4_Estrellas" }
+          { "ref_pool": "pool_4_estrellas_objetos" }
         ],
         "pool_3_estrellas": [
-          { "ref_pool": "Pool_Relleno_3_Estrellas" }
+          { "ref_pool": "pool_3_estrellas_objetos" }
         ]
       }
     }
   ]
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
