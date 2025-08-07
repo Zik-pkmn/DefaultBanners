@@ -1,6 +1,6 @@
 {
   "version": "2.1.1",
-  "config_version": "2025072019",
+  "config_version": "2025072020",
 
   "__documentation": {
     "motivo_de_este_archivo": "Este es un archivo de ejemplo avanzado para el Deluxe Gacha System. Muestra cómo configurar banners promocionales complejos, pools de relleno masivos y modificadores de tasa condicionales. Úsalo como base para tus propias creaciones.",
@@ -147,15 +147,41 @@
       "nombre": "Soberano Celestial",
       "descripcion": "Desde la capa de ozono, Rayquaza desciende. ¡Su poder silencia los cielos y domina los vientos!",
       "imagen_banner": "Gacha/Banners/rayquaza_banner",
-      "fecha_inicio": "2025-06-30", "fecha_fin": "2026-09-20",
-      "coste_item": "TICKETFUGAZ", "coste_cantidad": 1,
-      "pity_hard_cap_5": 90, "soft_pity_start_5": 75, "pity_hard_cap_4": 10,
-      "tasas_base": {"tasa_5_estrellas": 0.6, "tasa_4_estrellas": 5.1, "tasa_3_estrellas": 94.3},
+      "coste_item": "TICKETFUGAZ",
+      "coste_cantidad": 1,
+      "pity_hard_cap_5": 90,
+      "soft_pity_start_5": 75,
+      "pity_hard_cap_4": 10,
+      "horario": {
+        "hora_inicio": "22:45",
+        "hora_fin": "06:00"
+      },
+      "condiciones_de_activacion": {
+        "modo": "AND",
+        "lista": [
+          { "tipo": "TIENE_ITEM", "id": "MEGARING" }
+        ]
+      },
+      "tasas_base": {
+        "tasa_5_estrellas": 0.6,
+        "tasa_4_estrellas": 5.1,
+        "tasa_3_estrellas": 94.3
+      },
       "recompensas": {
-        "pool_5_estrellas_destacado": [{"tipo": "POKEMON", "id": "RAYQUAZA", "propiedades": {"nivel": 70}}],
+        "pool_5_estrellas_destacado": [
+          {
+            "tipo": "POKEMON",
+            "id": "RAYQUAZA",
+            "propiedades": { "nivel": 70 }
+          }
+        ],
         "pool_5_estrellas_general": [{"ref_pool": "pool_5_estrellas_permanente"}],
         "tasa_destacado_4_estrellas": 75,
-        "pool_4_estrellas_destacado": [{"tipo": "POKEMON", "id": "ALTARIA"}, {"tipo": "POKEMON", "id": "FLYGON"}, {"tipo": "POKEMON", "id": "TROPIUS"}],
+        "pool_4_estrellas_destacado": [
+          {"tipo": "POKEMON", "id": "ALTARIA"},
+          {"tipo": "POKEMON", "id": "FLYGON"},
+          {"tipo": "POKEMON", "id": "TROPIUS"}
+        ],
         "pool_4_estrellas_general": [{"ref_pool": "Pool_Relleno_4_Estrellas"}],
         "pool_3_estrellas": [{"ref_pool": "Pool_Relleno_3_Estrellas"}]
       }
@@ -270,6 +296,7 @@
     }
   ]
 }
+
 
 
 
