@@ -190,7 +190,7 @@
       {"tipo": "ITEM", "id": "REDSHARD", "cantidad": 2}, {"tipo": "ITEM", "id": "BLUESHARD", "cantidad": 2},
       {"tipo": "ITEM", "id": "YELLOWSHARD", "cantidad": 2}, {"tipo": "ITEM", "id": "GREENSHARD", "cantidad": 2},
       {"tipo": "ITEM", "id": "HEARTSCALE", "cantidad": 3}, {"tipo": "ITEM", "id": "EVERSTONE", "cantidad": 1},
-      {"tipo": "ITEM", "id": "PRETTYWING", "cantidad": 10}, {"tipo": "ITEM", "id": "HEALTHWING", "cantidad": 3},
+      {"tipo": "ITEM", "id": "PRETTYFEATHER", "cantidad": 10}, {"tipo": "ITEM", "id": "HEALTHWING", "cantidad": 3},
       {"tipo": "ITEM", "id": "MUSCLEWING", "cantidad": 3}, {"tipo": "ITEM", "id": "RESISTWING", "cantidad": 3},
       {"tipo": "ITEM", "id": "GENIUSWING", "cantidad": 3}, {"tipo": "ITEM", "id": "CLEVERWING", "cantidad": 3},
       {"tipo": "ITEM", "id": "SWIFTWING", "cantidad": 3}, {"tipo": "ITEM", "id": "OVALSTONE", "cantidad": 1},
@@ -499,3 +499,4 @@
     }
   ]
 }
+
