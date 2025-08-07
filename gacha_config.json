@@ -185,7 +185,7 @@
             "id": "GARCHOMP",
             "propiedades": {
               "nivel": 78,
-              "nombre_pokemon": "Garchomp de Cynthia",
+              "nombre_pokemon": "G. de Cynthia",
               "especie": "GARCHOMP",
               "forma": 0,
               "entrenador_original": "Cynthia",
@@ -270,6 +270,7 @@
     }
   ]
 }
+
 
 
 
