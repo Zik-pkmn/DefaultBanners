@@ -1,6 +1,6 @@
 {
   "version": "2.1.1",
-  "config_version": "2025072025"
+  "config_version": "2025072025",
 
 
   "pools_reutilizables": {
@@ -479,5 +479,6 @@
     }
   ]
 }
+
 
 
