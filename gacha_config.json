@@ -1,6 +1,6 @@
 {
   "version": "2.1.1",
-  "config_version": "2025072026",
+  "config_version": "2025072027",
 
 
   "pools_reutilizables": {
@@ -141,8 +141,8 @@
       {"tipo": "POKEMON", "id": "CATERPIE"}, {"tipo": "POKEMON", "id": "WEEDLE"},
       {"tipo": "POKEMON", "id": "PIDGEY"}, {"tipo": "POKEMON", "id": "RATTATA"},
       {"tipo": "POKEMON", "id": "SPEAROW"}, {"tipo": "POKEMON", "id": "EKANS"},
-      {"tipo": "POKEMON", "id": "SANDSHREW"}, {"tipo": "POKEMON", "id": "NIDORANFE"},
-      {"tipo": "POKEMON", "id": "NIDORANMA"}, {"tipo": "POKEMON", "id": "ZUBAT"},
+      {"tipo": "POKEMON", "id": "SANDSHREW"}, {"tipo": "POKEMON", "id": "NIDORANfE"},
+      {"tipo": "POKEMON", "id": "NIDORANmA"}, {"tipo": "POKEMON", "id": "ZUBAT"},
       {"tipo": "POKEMON", "id": "ODDISH"}, {"tipo": "POKEMON", "id": "PARAS"},
       {"tipo": "POKEMON", "id": "VENONAT"}, {"tipo": "POKEMON", "id": "DIGLETT"},
       {"tipo": "POKEMON", "id": "MEOWTH"}, {"tipo": "POKEMON", "id": "PSYDUCK"},
@@ -479,6 +479,7 @@
     }
   ]
 }
+
 
 
 
