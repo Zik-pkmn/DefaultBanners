@@ -1,6 +1,6 @@
 {
   "version": "2.1.1",
-  "config_version": "2025072030",
+  "config_version": "2025072031",
 
 
   "pools_reutilizables": {
@@ -367,7 +367,7 @@
       "id": "promo_cynthia_garchomp_2025_08",
       "nombre": "Legado de la Campeona",
       "descripcion": "Siente el poder de la campeona de Sinnoh, Cynthia. Su Garchomp, criado con esmero, ¡ahora puede unirse a tu equipo!",
-      "imagen_banner": "Banners/dragon"
+      "imagen_banner": "Banners/dragon",
       "imagen_banner_url": "https://raw.githubusercontent.com/Zik-pkmn/Gacha-assets/main/cynthia_banner_hd.png",
       "fecha_inicio": "2025-08-05",
       "fecha_fin": "2025-08-31",
@@ -479,6 +479,7 @@
     }
   ]
 }
+
 
 
 
