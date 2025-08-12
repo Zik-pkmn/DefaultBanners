@@ -1,6 +1,6 @@
 {
   "version": "2.1.1",
-  "config_version": "2025072027",
+  "config_version": "2025072028",
 
 
   "pools_reutilizables": {
@@ -287,7 +287,7 @@
         "coste_reducido": 8
       },
       "musica_banner": "gacha_theme_primal",
-      "marco_banner": "Gacha/banner_marco_1",
+      "marco_banner": "banner_marco_1",
       "recompensas": {
         "pool_5_estrellas_destacado": [
           {
@@ -479,6 +479,7 @@
     }
   ]
 }
+
 
 
 
